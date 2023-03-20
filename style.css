@@ -1,0 +1,121 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+}
+html {
+    box-sizing: border-box;
+}
+.main-class {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-component {
+    width: 375px;
+    height: auto;
+    background-color: hsl(216, 50%, 16%);
+    padding: 1rem;
+    color: hsl(215, 51%, 70%);
+    border-radius: 10px;
+    font-family: 'Outfit', sans-serif;
+    
+}
+.card-text {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 1rem;
+}
+
+                /*** Image stylesheet ***/
+.img-div {
+    /* position: relative; */
+    border-radius: 10px;
+    
+}
+.equil-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+                /*** Card Text stylesheet ***/
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    margin-top: 1rem;
+}
+.card-text .info {
+    font-size: 18px;
+}
+.num-class {
+    display: flex;
+    justify-content: space-between;
+}
+.eth span {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+.num-class .eth, .days{
+    display:  flex;
+}
+.num-class span {
+    margin-left: 0.6rem;
+}
+.avatar-img{
+    width: 40px;
+    height: 40px;
+    border: solid 1px hsl(0, 0%, 100%);
+    border-radius: 100px;
+}
+.creator {
+    display: flex;
+}
+.creator p {
+    margin: auto 0 auto 1rem;
+}
+.creator p span {
+    color: hsl(0, 0%, 100%);
+}
+hr {
+    border: hsl(215, 32%, 27%) solid 1px;
+}
+
+                /*** Hover stylesheet ***/
+
+.img-div:hover{
+    background: hsla(178, 100%, 50%, 0.537) url("./images/icon-view.svg") no-repeat center ;
+    cursor: pointer;
+    
+}
+
+.equil-img:hover {
+    opacity: 0.3;
+}
+
+h1:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.creator p span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+                /*** Footer stylesheet ***/
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    position: absolute;
+    bottom: 0;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+
+}
